@@ -3,14 +3,19 @@
 $background_color_primary: #ffffff;
 $background_color_secondary: #f7f7fa;
 $background_color_tertiary: #f9f9ff;
+$background_color_button: #3D63EA;
 
 //font color variables
 
 $font_color_dark_gray: #1a202c;
 $font_color_gray: #4A5568;
+$font_color_light: #fafafa;
 
 //gradient variables
 
 $gradient_primary:linear-gradient(to top right,#f7666f,#406aff);
 $gradient_nav_button:linear-gradient(to top right,#57007b,#6675f7);
 
+//place holder variables (use for mixin,fonction)
+
+$border_radius: 5px;

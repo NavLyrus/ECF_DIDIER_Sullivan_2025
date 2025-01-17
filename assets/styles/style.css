@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   height: 80px;
   padding-left: 2%;
   padding-right: 1%;
@@ -13,6 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: normal;
+  flex-wrap: wrap;
   font-family: "Inspiration";
   font-size: 1.8em;
   gap: 10px;
@@ -22,6 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   height: 50px;
   gap: 80px;
   color: #4A5568;
@@ -32,14 +35,48 @@
 
 .nav__button {
   background: linear-gradient(to top right, #57007b, #6675f7);
+  padding: 10px 20px;
   border: transparent;
   border-radius: 5px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
   color: #fafafa;
-  font-weight: 600;
+  background-color: #3D63EA;
+  font-weight: 500;
+}
+
+.header__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: -150px 10%;
+}
+.header__flex img {
+  padding-top: 250px;
+}
+
+.header__flexText {
+  display: flex;
+  align-items: flex-start;
+  justify-content: normal;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.header__flexText strong {
+  font-weight: 700;
+}
+.header__flexText p {
+  font-size: 1.2em;
+  opacity: 0.8;
+  margin-bottom: 70px;
+}
+
+.header__button {
+  padding: 15px 30px;
+  border: transparent;
+  border-radius: 5px;
+  color: #fafafa;
+  background-color: #3D63EA;
+  font-size: 1em;
 }
 
 body {
@@ -50,6 +87,11 @@ body {
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 4em;
 }
 
 /*# sourceMappingURL=style.css.map */
