@@ -4,3 +4,15 @@
     display:flex;
     align-items: center;
 }
+
+
+@mixin flex-center ($align: center, $justify: center) {
+    display:flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin box ($width, $height) {
+    width: $width;
+    height: $height;
+}
