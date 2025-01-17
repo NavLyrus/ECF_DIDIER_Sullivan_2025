@@ -30,3 +30,9 @@
     background-color:$background-color;
 }
 
+@mixin text-gradient($color1:#f7666f, $color2:#406aff,$direction: to top right) {
+    background: linear-gradient($direction,$color1,$color2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+

@@ -6,8 +6,7 @@
 .nav__flex {
     @include flex-center(center, space-between);
     height: 80px;
-    padding-left: 2%;
-    padding-right: 1%;
+    padding: 0 1% 0 2%;
     border:solid transparent;
     box-shadow:5px 12px 50px 9px rgba(0,0,0,0.1)
 }
@@ -54,8 +53,18 @@
         font-size: 1.2em;
         opacity: 0.8;
         margin-bottom: 70px;
-    }  
+    } 
+    
 }
+.header__h1-gradientOne {
+    @include text-gradient(#de4396, #0d1c9f69,to bottom);
+    font-weight: 700;
+}
+
+.header__h1-gradientTwo {
+    @include text-gradient($color1: #693ebad8,$color2: #d05a99cf,$direction: to top right);
+    font-weight: 800;
+}   
 
 .header__button {
     @include button(15px, 30px);
