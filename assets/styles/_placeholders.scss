@@ -6,17 +6,17 @@
 }
 
 
-@mixin flex-center ($align: center, $justify: center) {
+@mixin flex-center ($align: center, $justify: center, $wrap: wrap) {
     display:flex;
     align-items: $align;
     justify-content: $justify;
-    flex-wrap: wrap;
+    flex-wrap: $wrap;
 }
 
-@mixin box ($width, $height, $border-color: transparent,$border-radius: $border_radius) {
+@mixin box ($width, $height,$border-size: 1px, $border-color: transparent,$border-radius: $border_radius) {
     width: $width;
     height: $height;
-    border:solid $border-color;
+    border:solid $border-size $border-color;
     border-radius:$border-radius;
 }
 

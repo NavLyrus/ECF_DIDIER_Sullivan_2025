@@ -36,7 +36,7 @@
 }
 
 .header__flex {
-    @include flex-center(center, space-between);
+    @include flex-center(center, space-between, no wrap);
     margin: -150px 10% ;
     img {
         padding-top: 250px;
@@ -69,4 +69,4 @@
 .header__button {
     @include button(15px, 30px);
     font-size: 1em;
-}
+} 
