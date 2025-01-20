@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: normal;
   flex-wrap: wrap;
   height: 80px;
   padding: 0 1% 0 2%;
@@ -13,6 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: normal;
+  flex-direction: normal;
   flex-wrap: wrap;
   font-family: "Inspiration";
   font-size: 1.8em;
@@ -23,6 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: normal;
   flex-wrap: wrap;
   height: 50px;
   gap: 80px;
@@ -45,7 +48,8 @@
 .header__flex {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-direction: normal;
   flex-wrap: no wrap;
   margin: -150px 10%;
 }
@@ -57,6 +61,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: normal;
+  flex-direction: normal;
   flex-wrap: wrap;
   flex-direction: column;
 }
@@ -114,7 +119,7 @@ h2 {
 
 .main__carrouselOne {
   width: 100%;
-  height: 600px;
+  height: 610px;
   border: solid #e7daed transparent;
   border-radius: 0;
   background-color: #f9f9ff;
@@ -127,17 +132,19 @@ h2 {
 
 .main__carrouselOne-flexOne {
   display: flex;
-  align-items: center;
+  align-items: normal;
   justify-content: center;
+  flex-direction: normal;
   flex-wrap: no wrap;
   gap: 20px;
-  margin-top: 70px;
+  margin-top: 20px;
 }
 
 .main__carrouselOne-flexTwo {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  flex-direction: column;
   flex-wrap: wrap;
   width: 333px;
   height: 287px;
@@ -146,13 +153,49 @@ h2 {
   background-color: #fafafa;
   margin: 10px;
   box-shadow: 0px 0px 27px -8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.main__carrouselOne-flexTwo img {
+  width: 30px;
+  border: solid;
+  border-color: rgba(97, 4, 118, 0.498);
+  border-radius: 100%;
+  border-width: 1.5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.main__carrouselOne-flexTwo p {
+  color: #718096;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+.main__carrouselOne-flexTwo h3 {
+  color: #1a202c;
+  font-size: 1.4em;
+  margin: 20px 0px;
 }
 
-.main__carrouselOne-flexTwoSelected {
+.main__carrouselOne-flexTwo:hover {
   background: linear-gradient(white, white) padding-box, linear-gradient(to top right, #f7666f, #406aff), border-box;
   border-radius: 10px;
   border-width: 2px;
   box-shadow: -1px 9px 25px 7px rgba(0, 0, 0, 0.05);
+  margin-top: 50px;
+  transition: all 0.5s ease-in-out;
+}
+.main__carrouselOne-flexTwo:hover h3 {
+  background: linear-gradient(to top right, #71117c, #d6517f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main__carrouselOne-flexTwo:hover p {
+  color: #1a202c;
+}
+
+.main__carrouselOne-node {
+  text-align: center;
+  margin: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

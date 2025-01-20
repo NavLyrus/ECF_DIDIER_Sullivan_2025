@@ -6,11 +6,13 @@
 }
 
 
-@mixin flex-center ($align: center, $justify: center, $wrap: wrap) {
+@mixin flex-center ($align: center, $justify: center, $direction:normal, $wrap: wrap) {
     display:flex;
     align-items: $align;
     justify-content: $justify;
+    flex-direction: $direction;
     flex-wrap: $wrap;
+    
 }
 
 @mixin box ($width, $height,$border-size: 1px, $border-color: transparent,$border-radius: $border_radius) {
