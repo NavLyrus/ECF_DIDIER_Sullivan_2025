@@ -1,4 +1,4 @@
-@import '_variables.scss';
+@use '_variables.scss' as *;
 
 %flex-center {
     display:flex;
@@ -15,11 +15,12 @@
     
 }
 
-@mixin box ($width, $height,$border-size: 1px, $border-color: transparent,$border-radius: $border_radius) {
+@mixin box ($width, $height,$border-size: 1px, $border-color: transparent,$border-radius: $border_radius,$background-color:$background_color_primary) {
     width: $width;
     height: $height;
     border:solid $border-size $border-color;
     border-radius:$border-radius;
+    background-color: $background-color;
 }
 
 @mixin button ($padding-vertical:10px, $padding-horizontal:20px,
@@ -38,3 +39,9 @@
     -webkit-text-fill-color: transparent;
 }
 
+@mixin paragraphe($color:#718096, $font-size: 1.1em, $font-weight: 300, $line-height: 1.5em) {
+        color: $color;
+        font-size: $font-size;
+        font-weight: $font-weight;
+        line-height: $line-height;
+} 

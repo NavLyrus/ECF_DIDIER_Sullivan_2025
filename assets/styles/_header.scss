@@ -1,7 +1,6 @@
 
-@import '_variables.scss';
-@import '_placeholders.scss';
-
+@use '_variables.scss' as *;
+@use '_placeholders.scss' as * ;
 
 .nav__flex {
     @include flex-center(center, space-between);
