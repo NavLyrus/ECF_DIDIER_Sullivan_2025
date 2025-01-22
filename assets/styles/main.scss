@@ -26,6 +26,15 @@ h2 {
     font-weight: 400;
 }
 
+h4 {
+    @include  paragraphe($font-size:1em, $font-weight: 500, $line-height: 0.5em);
+    text-align: center;
+    margin-top: 15px;
+}
+
+//section carrouselOne
+
+
 .main__carrouselOne{
     @include box(100%, 610px,$border_primary_color, $border-radius: 0);
     background-color: $background_color_tertiary;
@@ -98,6 +107,12 @@ h2 {
     margin: 0 10% 0 33%;   
 }
 
+
+
+//section articleOne
+
+
+
 .main__articleOne {
 
 
@@ -141,6 +156,14 @@ h2 {
     cursor: pointer;
 }
 
+
+
+
+//section partner
+
+
+
+
 .main__partner-flexTitle {
     margin-left:10%;
     h2{
@@ -167,6 +190,12 @@ h2 {
     }
 }
 
+
+
+//section review 
+
+
+
 .main__review {
 
 }
@@ -176,12 +205,85 @@ h2 {
 .main__review-flexTitle {
     @include flex-center(center,$direction:column);
     p {
-        @include paragraphe($font-size:1.1em, $font-weight: 400, $line-height: 1.8em);
+        @include paragraphe(#718096,$font-size:1.1em, $font-weight: 400, $line-height: 1.8em);
+        text-align: center;
+        margin: 50px 0 0 0;
+    }
+}
+.main__review-flexCommaLeft {
+   margin: 0 60px 110px 0;
+}
+.main__review-flexCommaRight {
+    margin: 0 0 0 60px;
+    img {
+        transform: scaleX(-1);
+    }
+}
+.main__review-buttonLeft {
+    margin: 0 200px 0 60px;
+    cursor: pointer;
+}
+.main__review-buttonRight {
+    margin: 0 0 -60px 180px;
+    cursor: pointer;
+}
+
+.main__review-flexTwo {
+    @include flex-center(center,$wrap:no wrap);
+    margin:40px 0 0 0;
+    
+}
+.main__review-flexCustomer {
+    @include flex-center(center,$direction:column);
+    margin: 0 20px 0 20px;   
+
+    h4 {
+        opacity:0.6;
     }
 }
 
-.main__review-flexComma {
+.main__review-stars
+    {
+        opacity:1;
+    }
+
+.main__review-companyHigh {
+        opacity:0.6;
+        @include paragraphe($font-size:0.9em, $font-weight: 400, $line-height: 0.6em);
+    }
+
+ .main__review-companyLow {
+        opacity:0.25;
+        @include paragraphe($font-size:0.9em, $font-weight: 400, $line-height: 0.6em);
+ }
+
+ .main__review-companyPP {
+        opacity:0.6;
+        margin-bottom: -20px;
 }
+
+.main__review-flexCustomer--selected {
+    @include flex-center(center,$direction:column);
+    margin: 0 20px 0 20px; 
+    opacity:1;
+    .main__review-companyPP {
+        opacity:1;
+        filter:drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+    }
+    h4 {
+        color:#57007b;
+        @include paragraphe(#57007b,$font-size:1.3em, $font-weight: 700, $line-height: 1em);
+
+    }
+
+    p {
+        @include paragraphe(#000000,$font-size:1em, $font-weight: 500, $line-height: 1em);
+        margin-top: -20px;
+    }
+        
+}
+
+
 
 
 
