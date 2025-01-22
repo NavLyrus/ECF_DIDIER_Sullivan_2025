@@ -183,12 +183,21 @@ h4 {
 .main__partner-carrousel {
     @include box(100%,200px,$border-size:2px,$border-color:$border_primary_color,$background-color: $background_color_secondary);
     text-align: center;
+    overflow-x:scroll;
+    //overscroll-behavior-x:auto;
+
     img {
         height: 100px;
         margin:  50px 0 50px -10%;
         text-align: center;
         cursor:pointer;
+   
+   
     }
+}
+
+.main__partner-carrousel::-webkit-scrollbar {
+    display: none;
 }
 
 
@@ -197,9 +206,7 @@ h4 {
 
 
 
-.main__review {
 
-}
 .main__review-flexOne {
     @include flex-center(flex-end , center);
     margin: 150px 0 0 0 ;
@@ -285,6 +292,58 @@ h4 {
         
 }
 
+
+//section project
+
+
+.main__project { 
+    background-color: $background_color_secondary;
+    border-top: solid 1px $border_primary_color;
+    margin:120px 0 0 0;
+    }
+
+.main__project-flexTitle {
+    @include flex-center(center,$direction:column);
+    margin: 100px 0 0 0;
+
+}
+
+.main__project-flexOne {
+    @include flex-center(center,$wrap:no wrap);
+    margin: 70px 0 0 0;
+}
+
+
+.main__project-flexTwo {
+    @include flex-center(flex-start,$wrap:no wrap,$justify:space-between);
+    @include box(1200px,416px,$border-size:1px,$border-color:$border_primary_color,$background-color: #f1f2ff,$border-radius: 25px);
+    padding-right: 50px;
+    
+}
+
+.main__project-flexText {
+    // @include box(720px,416px,$border-size:1px,$border-color:$border_primary_color,$background-color: #f1f2ff,$border-radius: 25px);
+    @include flex-center(flex-start,$direction:column);
+    margin-top: 50px;
+    h3 {
+        @include paragraphe(#2d3748,$font-size:1.6em, $font-weight: 700, $line-height: 1.5em);
+        ;
+    }
+    p {
+        @include paragraphe($font-size:1em, $font-weight: 400, $line-height: 1.5em);
+        text-align: left;
+    }
+}
+
+.main__project-flexLink {
+    @include flex-center(center,center);
+    margin: 20px 0 0 0;
+    @include text-gradient(#71117c,#d6517f);
+    font-weight: 650;
+    align-self: flex-end;
+    margin-top: 50px;
+    
+}
 
 
 
