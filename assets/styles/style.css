@@ -270,7 +270,7 @@ h4 {
 }
 
 .main__partner-flexTitle {
-  margin-left: 10%;
+  margin: 0 0 -60px 10%;
 }
 .main__partner-flexTitle h2 {
   text-align: left;
@@ -278,6 +278,7 @@ h4 {
 
 .main__partner-selector {
   margin-left: 80%;
+  margin: 0 0 -30px 80%;
 }
 
 .main__partner-selector:hover {
@@ -306,6 +307,7 @@ h4 {
   justify-content: center;
   flex-direction: normal;
   flex-wrap: wrap;
+  margin: 150px 0 0 0;
 }
 
 .main__review-flexTitle {
