@@ -191,8 +191,6 @@ h4 {
         margin:  50px 0 50px -10%;
         text-align: center;
         cursor:pointer;
-   
-   
     }
 }
 
@@ -309,16 +307,26 @@ h4 {
 }
 
 .main__project-flexOne {
-    @include flex-center(center,$wrap:no wrap);
-    margin: 70px 0 0 0;
+    @include flex-center(center,$wrap:no wrap,$direction:column);
+    margin: 6z0px 0 0 0;
+    gap: 40px;
 }
 
 
 .main__project-flexTwo {
     @include flex-center(flex-start,$wrap:no wrap,$justify:space-between);
     @include box(1200px,416px,$border-size:1px,$border-color:$border_primary_color,$background-color: #f1f2ff,$border-radius: 25px);
-    padding-right: 50px;
+    padding-right: 50px;  
+}
+.main__project-flexThree {
+    @extend.main__project-flexTwo ;
+    background-color: #f0fff7;
     
+}
+.main__project-flexFour {
+    @extend.main__project-flexTwo ;
+    background-color: #fff4f4;
+     
 }
 
 .main__project-flexText {
@@ -337,13 +345,19 @@ h4 {
 
 .main__project-flexLink {
     @include flex-center(center,center);
+    @include text-gradient(#70107c,#db5480);
     margin: 20px 0 0 0;
-    @include text-gradient(#71117c,#d6517f);
     font-weight: 650;
     align-self: flex-end;
-    margin-top: 50px;
-    
+    margin-top: 40px;  
 }
+.main__project-flexLinkTwo {
+    @extend.main__project-flexLink;
+    margin: 0px 270px 0 0;
+    align-self: flex-end;
+    font-size: 1.2em;
+    gap:15px;  
+}   
 
 
 

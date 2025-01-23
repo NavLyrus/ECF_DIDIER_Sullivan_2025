@@ -445,12 +445,13 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: normal;
+  flex-direction: column;
   flex-wrap: no wrap;
-  margin: 70px 0 0 0;
+  margin: 6z0px 0 0 0;
+  gap: 40px;
 }
 
-.main__project-flexTwo {
+.main__project-flexTwo, .main__project-flexFour, .main__project-flexThree {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -462,6 +463,14 @@ h4 {
   border-radius: 25px;
   background-color: #f1f2ff;
   padding-right: 50px;
+}
+
+.main__project-flexThree {
+  background-color: #f0fff7;
+}
+
+.main__project-flexFour {
+  background-color: #fff4f4;
 }
 
 .main__project-flexText {
@@ -486,19 +495,26 @@ h4 {
   text-align: left;
 }
 
-.main__project-flexLink {
+.main__project-flexLink, .main__project-flexLinkTwo {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: normal;
   flex-wrap: wrap;
-  margin: 20px 0 0 0;
-  background: linear-gradient(to top right, #71117c, #d6517f);
+  background: linear-gradient(to top right, #70107c, #db5480);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin: 20px 0 0 0;
   font-weight: 650;
   align-self: flex-end;
-  margin-top: 50px;
+  margin-top: 40px;
+}
+
+.main__project-flexLinkTwo {
+  margin: 0px 270px 0 0;
+  align-self: flex-end;
+  font-size: 1.2em;
+  gap: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
