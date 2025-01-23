@@ -524,7 +524,7 @@ h4 {
   padding: 70px 0 0 0;
 }
 
-.main__skill-flexOne {
+.main__skill-flexMain {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -534,23 +534,9 @@ h4 {
   margin: 50px 0 100px 0;
 }
 
-.main__skill-flexTwo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: normal;
-  flex-wrap: wrap;
-  width: 604px;
-  height: 237px;
-  border: solid 1px transparent;
-  border-radius: 0px;
-  background-color: #fafafa;
-  border: solid 2px #e7daed;
-}
-
 .main__skill-flexText {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
@@ -560,6 +546,82 @@ h4 {
   font-size: 1em;
   font-weight: 400;
   line-height: 1.5em;
+}
+.main__skill-flexText h3 {
+  color: #1a202c;
+  margin: 50px 0 0 0;
+}
+
+.main__skill-flexOne, .main__skill-flexSix, .main__skill-flexFive, .main__skill-flexFour, .main__skill-flexThree, .main__skill-flexTwo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: normal;
+  flex-wrap: wrap;
+  width: 604px;
+  height: 237px;
+  border: solid 1px transparent;
+  border-radius: 0px;
+  background-color: #fafafa;
+  border: solid 1px #e7daed;
+}
+.main__skill-flexOne img, .main__skill-flexSix img, .main__skill-flexFive img, .main__skill-flexFour img, .main__skill-flexThree img, .main__skill-flexTwo img {
+  width: 35px;
+  height: 35px;
+  background-image: url(../images/ux.png);
+  padding: 12px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 50px 30px 0 0;
+}
+.main__skill-flexOne b, .main__skill-flexSix b, .main__skill-flexFive b, .main__skill-flexFour b, .main__skill-flexThree b, .main__skill-flexTwo b {
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.main__skill-flexTwo img {
+  background-image: url(../images/developing.png);
+}
+.main__skill-flexTwo b {
+  background: linear-gradient(to top right, #60c6f3, #63ccf3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main__skill-flexThree img {
+  background-image: url(../images/proven.png);
+}
+.main__skill-flexThree b {
+  background: linear-gradient(to top right, #ff7aa9, #ff83aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main__skill-flexFour img {
+  background-image: url(../images/security.png);
+}
+.main__skill-flexFour b {
+  background: linear-gradient(to top right, #51e8d3, #57e9dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main__skill-flexFive img {
+  background-image: url(../images/code.png);
+}
+.main__skill-flexFive b {
+  background: linear-gradient(to top right, #fcd163, #fdd962);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main__skill-flexSix img {
+  background-image: url(../images/quality.png);
+}
+.main__skill-flexSix b {
+  background: linear-gradient(to top right, #c3457f, #d14e7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -375,29 +375,97 @@ h4 {
     @extend .main__review-flexTitle;
 }   
 
-.main__skill-flexOne {
+.main__skill-flexMain {
     @include flex-center(center);
     gap: 30px;
     margin: 50px 0 100px 0;
 }
 
-.main__skill-flexTwo {
-    @include flex-center(center);
-    @include box(604px,237px,$background-color:$font_color_light,$border-radius:0px);
-    border:solid 2px $border_primary_color;
-    
-}
+
 
 .main__skill-flexText {
-    @include flex-center(center,$direction:column);
+    @include flex-center(flex-start,$direction:column);
     p {
         @include paragraphe($font-size:1em, $font-weight: 400, $line-height: 1.5em,$color:#4a5568);
     }
-    
-    
-
+    h3 {
+        color: $font_color_dark_gray;
+        margin:50px 0 0 0;
+    }
     
 }
+
+.main__skill-flexOne {
+    @include flex-center(flex-start,center);
+    @include box(604px,237px,$background-color:$font_color_light,$border-radius:0px);
+    border:solid 1px $border_primary_color; 
+    
+    img {
+        width: 35px;
+        height: 35px;
+        background-image: url(../images/ux.png);
+        padding: 12px;
+        background-repeat: no-repeat;
+        background-size:contain;
+        margin: 50px 30px 0 0;
+    }
+    b {
+        font-weight: 400;
+        cursor:pointer;
+    }
+   
+}
+
+.main__skill-flexTwo {
+    @extend.main__skill-flexOne;
+    img {
+        background-image: url(../images/developing.png);
+    }
+    b {
+        @include text-gradient(#60c6f3,#63ccf3);
+    }
+}
+
+.main__skill-flexThree {
+    @extend.main__skill-flexOne;
+    img {
+        background-image: url(../images/proven.png);
+    }
+    b {
+        @include text-gradient(#ff7aa9,#ff83aa);
+    }
+}
+
+.main__skill-flexFour {
+    @extend.main__skill-flexOne;
+    img {
+        background-image: url(../images/security.png);
+    }
+    b {
+        @include text-gradient(#51e8d3,#57e9dc);
+    }
+}
+
+.main__skill-flexFive {
+    @extend.main__skill-flexOne; 
+    img {
+        background-image: url(../images/code.png);
+    }
+    b {
+        @include text-gradient(#fcd163,#fdd962);
+    }
+}
+
+.main__skill-flexSix {
+    @extend.main__skill-flexOne;
+    img {
+        background-image: url(../images/quality.png);
+    }
+    b {
+        @include text-gradient(#c3457f,#d14e7f);
+    }
+}
+
 
 
 
