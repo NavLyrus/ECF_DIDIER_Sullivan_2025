@@ -315,14 +315,14 @@ h4 {
   margin: 150px 0 0 0;
 }
 
-.main__review-flexTitle {
+.main__review-flexTitle, .main__skill-flexTitle {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
 }
-.main__review-flexTitle p {
+.main__review-flexTitle p, .main__skill-flexTitle p {
   color: #718096;
   font-size: 1.1em;
   font-weight: 400;
@@ -430,6 +430,7 @@ h4 {
   background-color: #f7f7fa;
   border-top: solid 1px #e7daed;
   margin: 120px 0 0 0;
+  padding: 0 0 85px 0;
 }
 
 .main__project-flexTitle {
@@ -483,12 +484,12 @@ h4 {
 }
 .main__project-flexText h3 {
   color: #2d3748;
-  font-size: 1.6em;
+  font-size: 1.8em;
   font-weight: 700;
   line-height: 1.5em;
 }
 .main__project-flexText p {
-  color: #718096;
+  color: #4a5568;
   font-size: 1em;
   font-weight: 400;
   line-height: 1.5em;
@@ -515,6 +516,50 @@ h4 {
   align-self: flex-end;
   font-size: 1.2em;
   gap: 15px;
+}
+
+.main__skill {
+  background-color: #f7f7fa;
+  border: solid 1px #e7daed;
+  padding: 70px 0 0 0;
+}
+
+.main__skill-flexOne {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: normal;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 50px 0 100px 0;
+}
+
+.main__skill-flexTwo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: normal;
+  flex-wrap: wrap;
+  width: 604px;
+  height: 237px;
+  border: solid 1px transparent;
+  border-radius: 0px;
+  background-color: #fafafa;
+  border: solid 2px #e7daed;
+}
+
+.main__skill-flexText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.main__skill-flexText p {
+  color: #4a5568;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5em;
 }
 
 /*# sourceMappingURL=style.css.map */
