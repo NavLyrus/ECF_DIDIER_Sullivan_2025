@@ -11,7 +11,6 @@
 }
 
 .nav__flexLogo {
-   //@extend %flex-center;
    @include flex-center(center, normal);
     font-family: "Inspiration";
     font-size: 1.8em;

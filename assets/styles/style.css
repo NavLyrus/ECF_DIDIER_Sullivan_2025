@@ -97,6 +97,49 @@
   font-size: 1em;
 }
 
+.footer__flexOne {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: normal;
+  flex-wrap: wrap;
+}
+.footer__flexOne h4 {
+  color: #718096;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1em;
+  text-align: left;
+}
+
+.footer__flexLogo {
+  display: flex;
+  align-items: center;
+  justify-content: normal;
+  flex-direction: normal;
+  flex-wrap: wrap;
+  color: black;
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1em;
+  gap: 10px;
+  font-family: inspiration;
+}
+
+.footer__flexButton {
+  align-self: flex-end;
+}
+.footer__flexButton div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: normal;
+  flex-wrap: wrap;
+}
+.footer__flexButton img {
+  margin: 0 -5px;
+}
+
 body {
   background-color: #ffffff;
   font-family: "Inter", sans-serif;

@@ -1,0 +1,42 @@
+
+@use '_variables.scss' as *;
+@use '_placeholders.scss' as * ;
+
+
+.footer__flexOne {
+    @include flex-center(flex-start,space-between);
+    h4 {
+        @include paragraphe($font-size:1em, $font-weight: 400, $line-height: 1em);
+        text-align: left;
+    }
+}
+
+.footer__flexStart {
+
+}
+
+.footer__flexLogo {
+    @include flex-center(center, normal);
+    @include paragraphe($font-size:1.2em, $font-weight: 500, $line-height: 1em, $color:black);
+    gap:10px;
+    font-family: inspiration;
+}
+
+.footer__flexLink {
+
+}
+
+.footer__flexContact {
+
+}
+
+.footer__flexButton {
+    align-self: flex-end;
+    div {
+        @include flex-center(center,center);
+    }
+    img {
+        margin: 0 -5px;
+    }
+
+}
