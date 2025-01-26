@@ -113,10 +113,6 @@ h4 {
 
 
 
-.main__articleOne {
-
-
-}
 
 .main__articleOne-flexOne {
     @include flex-center(center,$wrap:no wrap, $justify:space-evenly);
@@ -331,7 +327,6 @@ h4 {
 }
 
 .main__project-flexText {
-    // @include box(720px,416px,$border-size:1px,$border-color:$border_primary_color,$background-color: #f1f2ff,$border-radius: 25px);
     @include flex-center(flex-start,$direction:column);
     margin-top: 50px;
     h3 {
@@ -352,6 +347,7 @@ h4 {
     align-self: flex-end;
     margin-top: 40px;  
 }
+
 .main__project-flexLinkTwo {
     @extend.main__project-flexLink;
     margin: 0px 270px 0 0;
@@ -368,7 +364,6 @@ h4 {
     background-color: $background_color_secondary;
     border:solid 1px $border_primary_color;
     padding: 70px 0 0 0;
-   // margin: 120px 0 0 0;
 }
 
 .main__skill-flexTitle {
@@ -392,14 +387,12 @@ h4 {
         color: $font_color_dark_gray;
         margin:50px 0 0 0;
     }
-    
 }
 
 .main__skill-flexOne {
     @include flex-center(flex-start,center);
     @include box(604px,237px,$background-color:$font_color_light,$border-radius:0px);
     border:solid 1px $border_primary_color; 
-    
     img {
         width: 35px;
         height: 35px;
@@ -412,8 +405,7 @@ h4 {
     b {
         font-weight: 400;
         cursor:pointer;
-    }
-   
+    } 
 }
 
 .main__skill-flexTwo {
@@ -464,6 +456,37 @@ h4 {
     b {
         @include text-gradient(#c3457f,#d14e7f);
     }
+}
+
+
+
+//section hire
+
+
+
+.main__hire-flexTitle {
+    @include flex-center(center,space-between);
+    @include box(80%,270px,$background-color:#eceff6,$border-radius:25px);
+    background: linear-gradient(to top right,#e4ecf7,#f1f1f5);
+    margin: 100px 10% 100px 10%;
+    h2 {
+        @include paragraphe($font-size:2em, $font-weight: 700, $line-height: 1.5em,$color:#29282f);
+        text-align: left;
+        margin: 0 7%;
+    }
+}
+
+.main__hire-flexButton {
+    @include flex-center(center,center,$direction:column);
+    gap: 25px;
+    margin: 0 7%;
+}
+.main__hire-button {
+    @include button(15px,40px);
+    border: solid 1px white;
+    background: linear-gradient(to top right,#f26562,#ffc157);
+    cursor: pointer;
+    font-weight: 600; 
 }
 
 

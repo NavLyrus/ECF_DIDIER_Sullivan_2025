@@ -624,4 +624,49 @@ h4 {
   -webkit-text-fill-color: transparent;
 }
 
+.main__hire-flexTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: normal;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 270px;
+  border: solid 1px transparent;
+  border-radius: 25px;
+  background-color: #eceff6;
+  background: linear-gradient(to top right, #e4ecf7, #f1f1f5);
+  margin: 100px 10% 100px 10%;
+}
+.main__hire-flexTitle h2 {
+  color: #29282f;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1.5em;
+  text-align: left;
+  margin: 0 7%;
+}
+
+.main__hire-flexButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 0 7%;
+}
+
+.main__hire-button {
+  padding: 15px 40px;
+  border: transparent;
+  border-radius: 5px;
+  color: #fafafa;
+  background-color: #3D63EA;
+  border: solid 1px white;
+  background: linear-gradient(to top right, #f26562, #ffc157);
+  cursor: pointer;
+  font-weight: 600;
+}
+
 /*# sourceMappingURL=style.css.map */
