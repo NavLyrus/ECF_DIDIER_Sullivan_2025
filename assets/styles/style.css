@@ -103,6 +103,7 @@
   justify-content: space-between;
   flex-direction: normal;
   flex-wrap: wrap;
+  margin: 140px 10% 80px 10%;
 }
 .footer__flexOne h4 {
   color: #718096;
@@ -110,6 +111,21 @@
   font-weight: 400;
   line-height: 1em;
   text-align: left;
+}
+.footer__flexOne p {
+  color: #718096;
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 1.4em;
+}
+
+.footer__flexStart {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 17px;
 }
 
 .footer__flexLogo {
@@ -119,11 +135,20 @@
   flex-direction: normal;
   flex-wrap: wrap;
   color: black;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 500;
   line-height: 1em;
   gap: 10px;
   font-family: inspiration;
+}
+
+.footer__link h3, .footer__contact h3 {
+  color: #4a5568;
+  margin: 0 0 30px 0;
+}
+
+.footer__contact h4 {
+  font-size: 1.1em;
 }
 
 .footer__flexButton {
@@ -138,6 +163,15 @@
 }
 .footer__flexButton img {
   margin: 0 -5px;
+}
+
+.footer__copyright {
+  color: #4a5568;
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1em;
+  text-align: center;
+  margin: 0 0 20px 0;
 }
 
 body {

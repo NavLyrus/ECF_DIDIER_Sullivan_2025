@@ -3,30 +3,46 @@
 @use '_placeholders.scss' as * ;
 
 
+
 .footer__flexOne {
     @include flex-center(flex-start,space-between);
+    margin : 140px 10% 80px 10%;
     h4 {
-        @include paragraphe($font-size:1em, $font-weight: 400, $line-height: 1em);
+        @include paragraphe($font-size:1em, $font-weight: 400, $line-height: 1em, $color:#718096);
         text-align: left;
+    }
+    p {
+        @include paragraphe($font-size:1.1em, $font-weight: 400, $line-height: 1.4em, $color:#718096);
     }
 }
 
 .footer__flexStart {
+    @include flex-center(flex-start,center,column);
+    gap: 17px;
+    
 
 }
 
 .footer__flexLogo {
     @include flex-center(center, normal);
-    @include paragraphe($font-size:1.2em, $font-weight: 500, $line-height: 1em, $color:black);
+    @include paragraphe($font-size:1.1em, $font-weight: 500, $line-height: 1em, $color:black);
     gap:10px;
     font-family: inspiration;
 }
 
-.footer__flexLink {
+.footer__link {
+    h3 {
+       color: #4a5568;
+       margin: 0 0 30px 0;
+    }
 
 }
 
-.footer__flexContact {
+.footer__contact {
+    @extend .footer__link;
+    h4 {
+       font-size: 1.1em;
+    }
 
 }
 
@@ -38,5 +54,10 @@
     img {
         margin: 0 -5px;
     }
+}
 
+.footer__copyright {
+    @include paragraphe($font-size:0.9em, $font-weight: 400, $line-height: 1em, $color:#4a5568);
+    text-align: center;
+    margin: 0 0 20px 0;
 }
