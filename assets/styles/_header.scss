@@ -2,69 +2,83 @@
 @use '_variables.scss' as *;
 @use '_placeholders.scss' as * ;
 
-.nav__flex {
-    @include flex-center(center, space-between);
-    height: 80px;
-    padding: 0 1% 0 2%;
-    border:solid transparent;
-    box-shadow:5px 12px 50px 9px rgba(0,0,0,0.1)
-}
+@media screen and (min-width: 1301px) {
 
-.nav__flexLogo {
-   @include flex-center(center, normal);
-    font-family: "Inspiration";
-    font-size: 1.8em;
-    gap: 10px;
-}
+   
 
-.nav__flexLink{
-    @include flex-center(center, center);
-    height: 50px;
-    gap: 80px; 
-    color:$font_color_gray;
-    font-weight: 600;
-    font-size: 1.3em;
-    opacity: 0.8;
-}
 
-.nav__button {
-    background: $gradient_nav_button;
-    @include button();
-    font-weight: 500;  
-}
-
-.header__flex {
-    @include flex-center(center, space-evenly, $wrap:no wrap);
-    margin: -150px 10% ;
-    img {
-        padding-top: 250px;
+    .nav__flex {
+        @include flex-center(center, space-between);
+        height: 80px;
+        padding: 0 1% 0 2%;
+        border:solid transparent;
+        box-shadow:5px 12px 50px 9px rgba(0,0,0,0.1)
     }
-}
+    
+    .nav__flexLogo {
+       @include flex-center(center, normal);
+        font-family: "Inspiration";
+        font-size: 1.8em;
+        gap: 10px;
+    }
+    
+    .nav__flexLink{
+        @include flex-center(center, center);
+        height: 50px;
+        gap: 80px; 
+        color:$font_color_gray;
+        font-weight: 600;
+        font-size: 1.3em;
+        opacity: 0.8;
+    }
+    
+    .nav__button {
+        background: $gradient_nav_button;
+        @include button();
+        font-weight: 500; 
+    }
 
-.header__flexText {
-    @include flex-center(flex-start, normal);
-    flex-direction: column;
-    strong {
+    .nav__burger {
+        display: none;
+    }
+    
+    .header__flex {
+        @include flex-center(center, space-evenly, $wrap:no wrap);
+        margin: -150px 10% ;
+        img {
+            padding-top: 250px;
+        }
+    }
+    
+    .header__flexText {
+        @include flex-center(flex-start, normal);
+        flex-direction: column;
+        strong {
+            font-weight: 700;
+        }
+        p {
+            font-size: 1.2em;
+            opacity: 0.8;
+            margin-bottom: 70px;
+        } 
+        
+    }
+    .header__h1-gradientOne {
+        @include text-gradient(#de4396, #0d1c9f69,to bottom);
         font-weight: 700;
     }
-    p {
-        font-size: 1.2em;
-        opacity: 0.8;
-        margin-bottom: 70px;
-    } 
     
-}
-.header__h1-gradientOne {
-    @include text-gradient(#de4396, #0d1c9f69,to bottom);
-    font-weight: 700;
-}
+    .header__h1-gradientTwo {
+        @include text-gradient($color1: #693ebad8,$color2: #d05a99cf,$direction: to top right);
+        font-weight: 800;
+    }   
+    
+    .header__button {
+        @include button(15px, 30px);
+        font-size: 1em;
+    } 
+ 
+ }
 
-.header__h1-gradientTwo {
-    @include text-gradient($color1: #693ebad8,$color2: #d05a99cf,$direction: to top right);
-    font-weight: 800;
-}   
 
-.header__button {
-    @include button(15px, 30px);
-    font-size: 1em;
-} 
+
