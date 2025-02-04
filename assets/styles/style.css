@@ -963,11 +963,12 @@
   }
   h1 {
     font-weight: 300;
-    font-size: 4vw;
+    font-size: 9vw;
+    text-align: center;
   }
   h2 {
     text-align: center;
-    font-size: 3.2vw;
+    font-size: 5vw;
     font-weight: 400;
   }
   h4 {
@@ -1013,28 +1014,28 @@
     align-items: center;
     justify-content: center;
     flex-direction: normal;
-    flex-wrap: no wrap;
+    flex-wrap: wrap;
     margin: 50px 100px;
   }
   .header__flex img {
-    width: 40%;
-    margin-top: 100px;
+    width: 400px;
   }
   .header__flexText {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: normal;
     flex-direction: column;
     flex-wrap: wrap;
-    align-self: flex-start;
+    gap: 30px;
   }
   .header__flexText strong {
     font-weight: 700;
   }
   .header__flexText p {
-    font-size: 2vw;
+    font-size: 4vw;
     opacity: 0.8;
     margin: 0 3% 20px 0;
+    text-align: center;
   }
   .header__h1-gradientOne {
     background: linear-gradient(to bottom, #de4396, rgba(13, 28, 159, 0.4117647059));
@@ -1063,11 +1064,11 @@
     border-radius: 0;
     background-color: #ffffff;
     background-color: #f9f9ff;
-    margin-top: 250px;
+    margin-top: 50px;
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
   }
   .main__carrouselOne h2 {
-    padding-top: 50px;
+    padding-top: 25px;
   }
   .main__carrouselOne-flexOne {
     display: flex;
@@ -1106,13 +1107,13 @@
   }
   .main__carrouselOne-flexTwo p {
     color: #718096;
-    font-size: 1.1em;
+    font-size: 3.5vw;
     font-weight: 300;
     line-height: 1.5em;
   }
   .main__carrouselOne-flexTwo h3 {
     color: #1a202c;
-    font-size: 1.4em;
+    font-size: 4vw;
     margin: 20px 0px;
   }
   .main__carrouselOne-flexSlider {
