@@ -47,6 +47,7 @@
              max-width:80px;
              max-height:80px;
          }
+         
      }
 
      .nav__flexLink{
@@ -66,6 +67,9 @@
         padding: 0 1% 0 2%;
         border:solid transparent;
         box-shadow:5px 12px 50px 9px rgba(0,0,0,0.1);
+        img {
+            margin: 0 20px 0 0;
+        }
     }
     .nav__burger {
      
@@ -314,7 +318,7 @@
        margin: 0 10% 300px 0;
     }
     .main__review-flexCommaRight {
-        margin: 0 0 0 10%;
+        margin: 0 10px 0 10%;
         img {
             transform: scaleX(-1);
         }
