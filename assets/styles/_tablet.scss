@@ -118,12 +118,14 @@
     
     
     .main__carrouselOne{
-        @include box(100%, 610px,$border_primary_color, $border-radius: 0);
+        //@include box(100%, 610px,$border_primary_color, $border-radius: 0);
         background-color: $background_color_tertiary;
-        margin-top: 250px;
+        border: solid 1px $border_primary_color;
+        margin: 200px 0 200px 0;
         box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
         h2 {
-            padding-top: 50px;
+            
+            margin:80px;
         }
      
           
@@ -132,7 +134,9 @@
     .main__carrouselOne-flexOne {
         @include flex-center(normal, center);
         gap: 20px;
-        margin: 20px;
+        margin: 30px;
+        //background-color: $background_color_tertiary;
+            
     }
     
     .main__carrouselOne-flexTwo {
@@ -184,13 +188,14 @@
     
     //section articleOne
     
-    
+  
+
     
     
     .main__articleOne-flexOne {
         @include flex-center(center,$wrap:no wrap, $justify:space-evenly);
         margin: 250px 0; 
-        display: block;
+        //display: block;
         img:hover {   
             opacity:0.7;
         }  
@@ -298,7 +303,7 @@
         
     }
     .main__review-flexCommaLeft {
-       margin: 0 10% 300px 0;
+       margin: 0 8% 170px 0;
     }
     .main__review-flexCommaRight {
         margin: 0 0 0 10%;
@@ -309,10 +314,12 @@
     .main__review-buttonLeft {
         margin: 0 100px 0 60px;
         cursor: pointer;
+        display:none;
     }
     .main__review-buttonRight {
         margin: 0 0 -60px 5%;
         cursor: pointer;
+        display:none;
     }
     
     .main__review-flexTwo {
@@ -389,7 +396,6 @@
     
     .main__project-flexOne {
         @include flex-center(center,$wrap:no wrap,$direction:column);
-        margin: 6z0px 0 0 0;
         gap: 40px;
     }
     
@@ -431,8 +437,9 @@
             ;
         }
         p {
-            @include paragraphe($font-size:1em, $font-weight: 400, $line-height: 1.5em,$color:#4a5568);
+            @include paragraphe($font-size:100%, $font-weight: 400, $line-height: 1.5em,$color:#4a5568);
             text-align: center;
+            
         }
     }
     
@@ -672,12 +679,69 @@
 
 }
 
+/*
+@media screen and (min-width:750px) and (max-width: 870px) {
+
+    .main__articleOne-flexOne {
+        @include flex-center(center,$wrap:no wrap, $justify:space-evenly);
+        margin: 700px 0 200px 0; 
+        
+        
+        img:hover {   
+            opacity:0.7;
+        }  
+        img {   
+            width: 40%;
+        } 
+        div {
+            img {
+                width: 10%;
+            }
+        } 
+    }
+
+
+    .main__review-flexOne {
+        @include flex-center(flex-end , center,$wrap:no wrap);
+        margin: 150px 0 0 0 ;
+        height: 400px;
+        background-color: rgb(255, 227, 227);
+        
+    }
+    .main__review-flexTitle {
+        @include flex-center(center,$direction:column);  
+        p {
+            @include paragraphe(#718096,$font-size:1.8vw, $font-weight: 400, $line-height: 1.8em);
+            text-align: center; 
+        }
+        
+    }
+    .main__review-flexCommaLeft {
+       margin: 0 10% 300px 0;
+    }
+    .main__review-flexCommaRight {
+        margin: 0 0 0 10%;
+        img {
+            transform: scaleX(-1);
+        }
+    }
+    .main__review-buttonLeft {
+        margin: 0 100px 0 60px;
+        cursor: pointer;
+        display:none;
+    }
+    .main__review-buttonRight {
+        margin: 0 0 -60px 5%;
+        cursor: pointer;
+        display:none;
+    }
+
+}
 
 
 
 
-
-
+*/
 
 
 

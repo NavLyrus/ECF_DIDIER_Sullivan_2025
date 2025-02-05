@@ -41,8 +41,12 @@
     .nav__flexLogo {
         @include flex-center(center, normal);
          font-family: "Inspiration";
-         font-size: 1.3em;
-         gap: 10px;
+         font-size: 2.2em;
+         gap: 20px;
+         svg {
+             max-width:80px;
+             max-height:80px;
+         }
      }
 
      .nav__flexLink{
@@ -118,8 +122,9 @@
     
     
     .main__carrouselOne{
-        @include box(100%, 610px,$border_primary_color, $border-radius: 0);
+        //@include box(100%, 610px,$border_primary_color, $border-radius: 0);
         background-color: $background_color_tertiary;
+        border: solid 1px $border_primary_color;
         margin-top: 50px;
         box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
         h2 {
@@ -189,13 +194,14 @@
     
     
     .main__articleOne-flexOne {
-        @include flex-center(center,$wrap:no wrap, $justify:space-evenly);
-        margin: 250px 0; 
+        @include flex-center(center,$wrap: wrap, $justify:space-evenly);
+        margin: 100px 0; 
         img:hover {   
             opacity:0.7;
         }  
         img {   
-            width: 40%;
+            width: 80%;
+            margin:30px;
         } 
         div {
             img {
@@ -207,13 +213,14 @@
     .main__articleOne-flexText {
         @include flex-center(flex-start,$direction:column);
         gap:20px;
+        margin:10%;
         h2 {
             font-weight: 400;
             text-align: left;
         }
         
         p {
-            @include paragraphe($font-size:1.7vw, $font-weight: 400, $line-height: 1.8em);
+            @include paragraphe($font-size:100%, $font-weight: 400, $line-height: 1.8em);
         }
     
         b {
@@ -225,13 +232,19 @@
             font-weight: 600;
             color:#57007b;
         }
+        img {
+            margin: 0;
+        }
     }
     
     .main__articleOne-FlexArrow
     {
-        @include flex-center();
+        @include flex-center($wrap:no wrap);
         gap: 10px;
         cursor: pointer;
+        img {
+            margin: 10px;
+        }
     }
     
     
@@ -243,15 +256,15 @@
     
     
     .main__partner-flexTitle {
-        margin: 0 0 -60px 10% ;
-        h2{
-            text-align: left;
-        }
+        @include flex-center(center,$direction:column);
+        margin: 0 0 20px 0 ;
+        
     }
     
     .main__partner-selector {
         margin-left:80%;
-        margin: 0 0 -30px 80%
+        margin: 0 0 -30px 80%;
+        display:none;
     }
     .main__partner-selector:hover {
         opacity:0.7;
@@ -273,7 +286,7 @@
     }
     
     .main__partner-carrousel::-webkit-scrollbar {
-        display: none;
+        //display: none;
     }
     
     
@@ -292,7 +305,7 @@
     .main__review-flexTitle {
         @include flex-center(center,$direction:column);  
         p {
-            @include paragraphe(#718096,$font-size:2vw, $font-weight: 400, $line-height: 1.8em);
+            @include paragraphe(#718096,$font-size:20px, $font-weight: 400, $line-height: 1.8em);
             text-align: center; 
         }
         
@@ -309,15 +322,18 @@
     .main__review-buttonLeft {
         margin: 0 100px 0 60px;
         cursor: pointer;
+        display: none;
     }
     .main__review-buttonRight {
         margin: 0 0 -60px 5%;
         cursor: pointer;
+        display: none;
     }
     
     .main__review-flexTwo {
-        @include flex-center(center,$wrap:no wrap);
+        @include flex-center(center,$wrap: wrap);
         margin:40px 0 0 0;
+        overflow-x:scroll;
         
     }
     .main__review-flexCustomer {
@@ -383,14 +399,19 @@
     
     .main__project-flexTitle {
         @include flex-center(center,$direction:column);
-        margin: 100px 0 0 0;
+        margin: 100px 0 20px 0;
     
     }
     
     .main__project-flexOne {
         @include flex-center(center,$wrap:no wrap,$direction:column);
-        margin: 6z0px 0 0 0;
-        gap: 40px;
+        
+        gap: 100px;
+        width: 90%;
+        margin: 0 5% 0 5%;
+        img {
+            width: 100%;
+        }
     }
     
     
@@ -432,7 +453,7 @@
         }
         p {
             @include paragraphe($font-size:1em, $font-weight: 400, $line-height: 1.5em,$color:#4a5568);
-            text-align: center;
+            //text-align: center;
         }
     }
     
@@ -443,17 +464,20 @@
         font-weight: 650;
         align-self: flex-end;
         margin-top: 40px;  
+        img {
+            width: 20px;
+        }
     }
     
     .main__project-flexLinkTwo {
-        @include flex-center(center,center);
-        margin: 20px 0 0 0;
+        @include flex-center(center,center,$wrap:no wrap);
         font-weight: 650;
-        align-self: flex-end;
         margin-top: 40px;  
-        margin: 0px 270px 0 0;
         font-size: 1.2em;
         gap:15px;  
+        img {
+            width: 30px;
+        }
     }
     
     
@@ -486,26 +510,27 @@
     .main__skill-flexText {
         @include flex-center(flex-start,$direction:column);
         p {
-            @include paragraphe($font-size:1em, $font-weight: 400, $line-height: 1.5em,$color:#4a5568);
+            @include paragraphe($font-size:15px, $font-weight: 400, $line-height: 1.5em,$color:#4a5568);
         }
         h3 {
             color: $font_color_dark_gray;
-            margin:50px 0 0 0;
+            margin:10px 0 0 0;
         }
     }
     
     .main__skill-flexOne {
         @include flex-center(flex-start,center);
-        @include box(604px,237px,$background-color:$font_color_light,$border-radius:0px);
         border:solid 1px $border_primary_color; 
+        background-color:$font_color_light;
+        margin: 0 10%;
+        padding: 20px ; 
         img {
-            width: 35px;
-            height: 35px;
+            width: 10%;
+            height: 10%;
             background-image: url(../images/ux.png);
             padding: 12px;
             background-repeat: no-repeat;
             background-size:contain;
-            margin: 50px 30px 0 0;
         }
         b {
             font-weight: 400;
@@ -515,16 +540,17 @@
     
     .main__skill-flexTwo {
         @include flex-center(flex-start,center);
-        @include box(604px,237px,$background-color:$font_color_light,$border-radius:0px);
         border:solid 1px $border_primary_color; 
+        background-color:$font_color_light;
+        margin: 0 10%;
+        padding: 20px ; 
         img {
-            width: 35px;
-            height: 35px;
+            width: 10%;
+            height: 10%;
             background-image: url(../images/ux.png);
             padding: 12px;
             background-repeat: no-repeat;
             background-size:contain;
-            margin: 50px 30px 0 0;
         }
         b {
             font-weight: 400;
@@ -540,16 +566,17 @@
     
     .main__skill-flexThree {
         @include flex-center(flex-start,center);
-        @include box(604px,237px,$background-color:$font_color_light,$border-radius:0px);
         border:solid 1px $border_primary_color; 
+        background-color:$font_color_light;
+        margin: 0 10%;
+        padding: 20px ; 
         img {
-            width: 35px;
-            height: 35px;
+            width: 10%;
+            height: 10%;
             background-image: url(../images/ux.png);
             padding: 12px;
             background-repeat: no-repeat;
             background-size:contain;
-            margin: 50px 30px 0 0;
         }
         b {
             font-weight: 400;
@@ -565,16 +592,17 @@
     
     .main__skill-flexFour {
         @include flex-center(flex-start,center);
-        @include box(604px,237px,$background-color:$font_color_light,$border-radius:0px);
         border:solid 1px $border_primary_color; 
+        background-color:$font_color_light;
+        margin: 0 10%;
+        padding: 20px ; 
         img {
-            width: 35px;
-            height: 35px;
+            width: 10%;
+            height: 10%;
             background-image: url(../images/ux.png);
             padding: 12px;
             background-repeat: no-repeat;
             background-size:contain;
-            margin: 50px 30px 0 0;
         }
         b {
             font-weight: 400;
@@ -590,16 +618,18 @@
     
     .main__skill-flexFive {
         @include flex-center(flex-start,center);
-        @include box(604px,237px,$background-color:$font_color_light,$border-radius:0px);
         border:solid 1px $border_primary_color; 
+        background-color:$font_color_light;
+        margin: 0 10%;
+        padding: 20px ; 
+
         img {
-            width: 35px;
-            height: 35px;
+            width: 10%;
+            height: 10%;
             background-image: url(../images/ux.png);
             padding: 12px;
             background-repeat: no-repeat;
-            background-size:contain;
-            margin: 50px 30px 0 0;
+            background-size:contain;  
         }
         b {
             font-weight: 400;
@@ -615,11 +645,13 @@
     
     .main__skill-flexSix {
         @include flex-center(flex-start,center);
-        @include box(604px,237px,$background-color:$font_color_light,$border-radius:0px);
         border:solid 1px $border_primary_color; 
+        background-color:$font_color_light;
+        margin: 0 10%;
+        padding: 20px ; 
         img {
-            width: 35px;
-            height: 35px;
+            width: 10%;
+            height: 10%;
             background-image: url(../images/ux.png);
             padding: 12px;
             background-repeat: no-repeat;
@@ -650,7 +682,7 @@
         background: linear-gradient(to top right,#e4ecf7,#f1f1f5);
         margin: 100px 10% 100px 10%;
         h2 {
-            @include paragraphe($font-size:2.5vw, $font-weight: 700, $line-height: 1.5em,$color:#29282f);
+            @include paragraphe($font-size:20px, $font-weight: 700, $line-height: 1.5em,$color:#29282f);
             text-align: left;
             margin: 0 7%;
         }
